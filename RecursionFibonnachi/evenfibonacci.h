@@ -6,5 +6,7 @@ class evenfibonacci :
 public:
 	evenfibonacci(void);
 	~evenfibonacci(void);
+
+	virtual void printFib(int x);
 };
 

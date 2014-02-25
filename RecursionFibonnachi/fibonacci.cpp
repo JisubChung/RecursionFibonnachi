@@ -13,7 +13,7 @@ void fibonacci::fiblist(int y)
 {
 	for (int x = 0; x < y; x++)
 	{
-		cout << fibonacci::fib(x);
+		printFib(x);
 		if (x+1 < y)
 		{
 			cout << ", ";
@@ -23,6 +23,11 @@ void fibonacci::fiblist(int y)
 			cout << endl;
 		}
 	}
+}
+
+void fibonacci::printFib(int z)
+{
+	cout << fibonacci::fib(z);
 }
 
 int fibonacci::fib(int x)

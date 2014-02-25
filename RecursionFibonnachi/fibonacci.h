@@ -11,6 +11,7 @@ public:
 	
 	int fib(int x);
 	void fiblist(int y);
+	virtual void printFib(int z);
 };
 
 #endif

@@ -6,5 +6,7 @@ class oddfibonacci :
 public:
 	oddfibonacci(void);
 	~oddfibonacci(void);
+
+	virtual void printFib(int x);
 };
 
