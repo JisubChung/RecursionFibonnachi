@@ -7,6 +7,7 @@ class fibonacci
 {
 public:
 	fibonacci();
+	fibonacci(int n);
 	~fibonacci(void);
 	
 	int fib(int x);

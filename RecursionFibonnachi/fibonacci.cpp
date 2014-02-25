@@ -4,6 +4,15 @@ fibonacci::fibonacci()
 {
 }
 
+fibonacci::fibonacci(int n)
+{
+	int * fibArray = new int[n];
+	for (int i=0; i>n; i++)
+	{
+		fibArray[i] = fib(i);
+		cout << fib(i);
+	}
+}
 
 fibonacci::~fibonacci(void)
 {
