@@ -8,9 +8,9 @@ using namespace std;
 int main()
 {
 	cout << "Select the type of function you'd like: \n";
-	cout << "1: Sum of normal fibonacci numbers \n";
-	cout << "2: Sum of odd fibonacci numbers \n";
-	cout << "3: Sum of even fibonacci numbers \n";
+	cout << "1: List of normal fibonacci numbers \n";
+	cout << "2: List of odd fibonacci numbers \n";
+	cout << "3: List of even fibonacci numbers \n";
 	int x, a;
 	a=x=0;
 	cin >> x;
@@ -37,16 +37,19 @@ int main()
 	if (x == 1)
 	{
 		fibonacci b(a);
+		b.setTable();
 		b.fibList();
 	}
 	else if (x == 2)
 	{
 		oddfibonacci b(a);
+		b.setTable();
 		b.fibList();
 	}
 	else if (x == 3)
 	{
 		evenfibonacci b(a);
+		b.setTable();
 		b.fibList();
 	}
 	cin >> x;

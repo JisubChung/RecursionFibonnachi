@@ -14,11 +14,10 @@ evenfibonacci::~evenfibonacci(void)
 {
 }
 
-bool evenfibonacci::recordfib(int i)
+bool evenfibonacci::continueFib(int j)
 {
-	if (getFib(i)%2==0)
+	if (getFib(j)%2 == 0)
 	{
-		setFibTable(i);
 		return true;
 	}
 	else

@@ -10,7 +10,7 @@ public:
 	evenfibonacci(int n);
 	~evenfibonacci(void);
 
-	virtual bool recordfib(int i);
+	virtual bool continueFib(int j);
 };
 
 #endif

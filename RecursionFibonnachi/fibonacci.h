@@ -6,24 +6,24 @@ using namespace std;
 class fibonacci
 {
 public:
-	//c'tor
+	//c'tors and d'tor
 	fibonacci();
 	fibonacci(int a);
 	~fibonacci(void);
 
 	//accessor
-	void fibList(); //Lists our fibonacci table
+	void fibList(); //Technically not an accessor, lists our fibonacci table
 	int getFibTableLength();
 	int getFib(int a);
 
 	//mutators
 	void setFibTableLength(int m);
-	void setFibTable(int n);
+	void setTable(); //technically not a mutator as it only accesses the following function
+	void setFibTable(int n, int m);
 
-	virtual bool recordfib(int i);
-
-	//member functions(?)
+	//member functions
 	void printFib(int x); //Prints the z'th fibonacci number in the table
+	virtual bool continueFib(int j); //permits storing of fib in table
 
 private:
 	int m_makeFib(int fib); //Is our fibonacci function

@@ -14,11 +14,10 @@ oddfibonacci::~oddfibonacci(void)
 {
 }
 
-bool oddfibonacci::recordfib(int i)
+bool oddfibonacci::continueFib(int j)
 {
-	if (getFib(i)%2!=0)
+	if (getFib(j)%2 != 0)
 	{
-		setFibTable(i);
 		return true;
 	}
 	else

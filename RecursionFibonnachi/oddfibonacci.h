@@ -10,7 +10,7 @@ public:
 	oddfibonacci(int n);
 	~oddfibonacci(void);
 
-	virtual bool recordfib(int i);
+	virtual bool continueFib(int j);
 };
 
 #endif
