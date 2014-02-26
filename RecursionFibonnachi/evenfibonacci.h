@@ -7,10 +7,10 @@ class evenfibonacci :
 {
 public:
 	evenfibonacci(void);
+	evenfibonacci(int n);
 	~evenfibonacci(void);
 
-	static int efib(int x);
-	virtual void printFib(int z);
+	virtual bool recordfib(int i);
 };
 
 #endif

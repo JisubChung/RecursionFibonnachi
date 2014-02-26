@@ -7,10 +7,10 @@ class oddfibonacci :
 {
 public:
 	oddfibonacci(void);
+	oddfibonacci(int n);
 	~oddfibonacci(void);
 
-	static int ofib(int x);
-	virtual void printFib(int z);
+	virtual bool recordfib(int i);
 };
 
 #endif

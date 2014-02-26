@@ -5,29 +5,24 @@ evenfibonacci::evenfibonacci(void)
 {
 }
 
+evenfibonacci::evenfibonacci(int n) : fibonacci(n)
+{
+}
+
 
 evenfibonacci::~evenfibonacci(void)
 {
 }
 
-int evenfibonacci::efib(int x)
+bool evenfibonacci::recordfib(int i)
 {
-	if (x == 0)
+	if (getFib(i)%2==0)
 	{
-		return 0;
+		setFibTable(i);
+		return true;
 	}
-	if (x == 1)
+	else
 	{
-		return 1;
-	}
-	return (efib(x-1)+efib(x-2));
-}
-
-void printFib(int x)
-{
-	int abc = evenfibonacci::efib(x);
-	if (abc%2 == 0)
-	{
-		cout << abc;
+		return false;
 	}
 }

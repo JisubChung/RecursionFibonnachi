@@ -6,13 +6,29 @@ using namespace std;
 class fibonacci
 {
 public:
+	//c'tor
 	fibonacci();
-	fibonacci(int n);
+	fibonacci(int a);
 	~fibonacci(void);
-	
-	int fib(int x);
-	void fiblist(int y);
-	virtual void printFib(int z);
+
+	//accessor
+	void fibList(); //Lists our fibonacci table
+	int getFibTableLength();
+	int getFib(int a);
+
+	//mutators
+	void setFibTableLength(int m);
+	void setFibTable(int n);
+
+	virtual bool recordfib(int i);
+
+	//member functions(?)
+	void printFib(int x); //Prints the z'th fibonacci number in the table
+
+private:
+	int m_makeFib(int fib); //Is our fibonacci function
+	int *m_fibTable;
+	int m_fibTableLength;
 };
 
 #endif

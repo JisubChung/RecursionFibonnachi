@@ -5,30 +5,24 @@ oddfibonacci::oddfibonacci(void)
 {
 }
 
+oddfibonacci::oddfibonacci(int n) : fibonacci(n)
+{
+}
+
 
 oddfibonacci::~oddfibonacci(void)
 {
 }
 
-int oddfibonacci::ofib(int x)
+bool oddfibonacci::recordfib(int i)
 {
-	if (x == 0)
+	if (getFib(i)%2!=0)
 	{
-		return 0;
+		setFibTable(i);
+		return true;
 	}
-	if (x == 1)
+	else
 	{
-		return 1;
-	}
-	return (ofib(x-1)+ofib(x-2));
-}
-
-void printFib(int x)
-{
-	int abc = oddfibonacci::ofib(x);
-	if (abc%2 != 0)
-	{
-		cout << abc;
+		return false;
 	}
 }
-

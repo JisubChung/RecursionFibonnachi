@@ -36,18 +36,18 @@ int main()
 	}
 	if (x == 1)
 	{
-		fibonacci b;
-		b.fiblist(a);
+		fibonacci b(a);
+		b.fibList();
 	}
 	else if (x == 2)
 	{
-		oddfibonacci b;
-//		b.oddfib(a);
+		oddfibonacci b(a);
+		b.fibList();
 	}
 	else if (x == 3)
 	{
-		evenfibonacci b;
-//		b.evenfib(a);
+		evenfibonacci b(a);
+		b.fibList();
 	}
 	cin >> x;
 	return 0;
